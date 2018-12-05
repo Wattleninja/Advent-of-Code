@@ -22,7 +22,7 @@ def main():
         s = react(data.translate(str.maketrans('', '', char + char.upper())))
         reacts.append(len(s))
 
-    print(min(react))
+    print(min(reacts))
 
 
 if __name__ == '__main__':
