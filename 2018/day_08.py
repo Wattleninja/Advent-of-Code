@@ -42,8 +42,8 @@ def metadata_sum(node: Node):
 
 
 def main():
-    with open('08.in') as f:
-        data = map(int, f.read().split())
+    with open('inputs/08.in') as f:
+        data = map(int, f.read().strip().split())
 
     root = parse_node(data)
     print(metadata_sum(root))

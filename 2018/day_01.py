@@ -1,5 +1,5 @@
 def main():
-    with open('01.in') as f:
+    with open('inputs/01.in') as f:
         data = [int(line) for line in f]
 
     print(sum(data))

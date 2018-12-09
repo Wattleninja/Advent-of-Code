@@ -2,7 +2,7 @@ from collections import defaultdict
 
 
 def main():
-    with open('03.in') as f:
+    with open('inputs/03.in') as f:
         overlaps = defaultdict(int)
         claims = defaultdict(list)
 

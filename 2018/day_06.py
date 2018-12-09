@@ -8,7 +8,7 @@ def manhattan(p1: Point, p2: Point):
 
 
 def main():
-    with open('06.in') as f:
+    with open('inputs/06.in') as f:
         data = [Point(*map(int, line.split(', '))) for line in f]
 
     width = max(p.x for p in data)

@@ -12,7 +12,7 @@ def react(s):
 
 
 def main():
-    with open('05.in') as f:
+    with open('inputs/05.in') as f:
         data = f.read().strip()
 
     print(len(react(data)))

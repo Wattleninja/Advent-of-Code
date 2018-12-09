@@ -47,6 +47,7 @@ def part_2(waiting: dict, steps: set, available: deque, num_workers, step_delay)
     completed = set()
     workers = defaultdict(int)
     offset = -ord('A') + 1 + step_delay
+    # order = []
 
     for _ in range(num_workers):
         if not available:
@@ -59,6 +60,7 @@ def part_2(waiting: dict, steps: set, available: deque, num_workers, step_delay)
             workers[step] -= 1
             if workers[step] == 0:
                 completed.add(step)
+                # order.append(step)
                 workers.pop(step)
 
         for step, reqs in list(waiting.items()):
@@ -75,6 +77,7 @@ def part_2(waiting: dict, steps: set, available: deque, num_workers, step_delay)
         time_taken += 1
 
     print(time_taken)
+    # print(''.join(order))
 
 
 if __name__ == '__main__':

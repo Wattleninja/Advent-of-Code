@@ -2,7 +2,7 @@ from collections import defaultdict
 
 
 def main():
-    with open('04.in') as f:
+    with open('inputs/04.in') as f:
         data = [line.strip() for line in f]
 
     guard_sleep = defaultdict(int)
