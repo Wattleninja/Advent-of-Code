@@ -35,7 +35,7 @@ CART_TURN_DIRECTIONS = {
 }
 
 
-INTERSECTION_CHOICE = (Direction.LEFT, None, Direction.RIGHT)
+INTERSECTION_CHOICES = (Direction.LEFT, None, Direction.RIGHT)
 INTERSECTION_CHANGE_DIRECTIONS = {
     Direction.LEFT: {
         Direction.LEFT: Direction.DOWN,
@@ -60,7 +60,7 @@ class Cart:
         self.direction = direction
         self.crashed = False
 
-        self.intersection_choices = cycle(INTERSECTION_CHOICE)
+        self.intersection_choices = cycle(INTERSECTION_CHOICES)
 
     @property
     def pos(self):
