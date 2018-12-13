@@ -59,7 +59,6 @@ class Cart:
         self.y = y
         self.direction = direction
         self.crashed = False
-
         self.intersection_choices = cycle(INTERSECTION_CHOICES)
 
     @property
@@ -131,7 +130,7 @@ def main():
             # Include for display_track
             #     track[x, y] = '-' if cart.direction in (Direction.LEFT, Direction.RIGHT) else '|'
             # else:
-            # elif char in ('+', '\\', '/'):
+            elif char in ('+', '\\', '/'):
                 track[x, y] = char
 
     while len(carts) > 1:
