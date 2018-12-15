@@ -68,9 +68,6 @@ class Cart:
     def __lt__(self, other):
         return self.pos < other.pos
 
-    def __eq__(self, other):
-        return self.pos == other.pos
-
     def __repr__(self):
         return f'Cart#{self.id} @ {self.pos} {self.direction}'
 
